@@ -53,7 +53,7 @@ Default value: 'MD'
 The namespace in which the precompiled templates will be assigned. Use dot notation (e.g. App.Templates) for nested namespaces or false for no namespace wrapping. When false with amd option set true, templates will be returned directly from the AMD wrapper.
 
 
-#### processName
+#### options.processName
 Type: `function`
 Default: null
 
@@ -67,7 +67,7 @@ options: {
 }
 ```
 
-#### templateSettings
+#### options.templateSettings
 Type: `Object`
 Default: null
 
@@ -88,7 +88,7 @@ jst: {
 }
 ```
 
-#### amd
+#### options.amd
 Type: `boolean`
 Default: false
 
@@ -108,7 +108,7 @@ options: {
 }
 ```
 
-#### processContent
+#### options.processContent
 Type: `function`
 
 This option accepts a function which takes one argument (the file content) and
@@ -123,6 +123,16 @@ options: {
   }
 }
 ```
+
+#### options.wrapper
+Type: `Object` or `String`
+
+A string or object representing the path(s) of the wrapper file. A wrapper is a jst file that can contain meta data from your markdown file. For more information on this option, see [grunt-md](https://www.npmjs.com/package/grunt-md), which this plugin is based on.
+
+#### options.mmOptions
+Type: `Object`
+
+Hash of options to pass to the `marky-mark` compilation process. 
 
 ### Usage Examples
 
