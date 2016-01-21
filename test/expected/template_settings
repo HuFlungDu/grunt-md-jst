@@ -1,0 +1,7 @@
+this["MD"] = this["MD"] || {};
+
+this["MD"]["test/fixtures/one.md"] = function(data) {
+var __t, __p = '';
+__p += '<h2 id="this-is-a-test">This is a test</h2>\n<p>There is stuff here</p>';
+return __p
+};

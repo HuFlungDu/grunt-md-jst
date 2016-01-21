@@ -1,0 +1,21 @@
+this["MD"] = this["MD"] || {};
+
+this["MD"]["test/fixtures/one.md"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '';
+with (obj) {
+__p += '<h2 id="this-is-a-test">This is a test</h2>\n<p>There is stuff here</p>';
+
+}
+return __p
+};
+
+this["MD"]["test/fixtures/another.md"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '';
+with (obj) {
+__p += '<h2 id="this-is-another-test">This is another test</h2>\n<p>There is more stuff here</p>';
+
+}
+return __p
+};
